@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Archivo";
+  src: url("/assets/fonts/Archivo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("/assets/fonts/Archivo-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Option A: Override the default sans font so it applies to EVERYTHING automatically */
+  /* --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif; */
+
+  /* Option B: Create a specific utility class like `font-display` */
+  --font-display: "Archivo", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
