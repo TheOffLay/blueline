@@ -3,7 +3,7 @@ export default function CTA() {
     <section
       className="font-display relative w-full py-24 md:py-32 lg:py-40 flex items-center justify-center overflow-hidden bg-slate-900"
       style={{
-        backgroundImage: "url('/assets/cta.svg')",
+        backgroundImage: "url('/assets/cta.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

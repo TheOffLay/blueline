@@ -44,7 +44,7 @@ export default function Voyage() {
           </p>
 
           {/* images */}
-          <div className="flex items-center justify-center mt-10">
+          <div className="flex items-center justify-center mt-10 pointer-events-none">
             <img src="/assets/voyage-mobile.webp" alt="Maritime Professionals on site" className="lg:hidden w-full h-auto md:h-112.5 object-cover" />
             <img src="/assets/voyage-web.webp" alt="Maritime Professionals on site" className="hidden lg:block w-full h-auto md:h-112.5 object-cover" />
           </div>

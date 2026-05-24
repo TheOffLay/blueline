@@ -2,18 +2,18 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#145DA0] text-white py-12 md:py-16 px-4 sm:px-6 lg:px-8 font-display">
+    <footer className="w-full bg-[#145DA0] text-white py-12 md:py-16 px-2 lg:px-8 font-display">
       <div className="max-w-350 mx-auto">
         {/* Main Bordered Card Container */}
         <div className="border border-[#2B6DA9] rounded-2xl overflow-hidden mb-10">
           {/* Top Section: Links & Info Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 p-8 md:p-0 gap-y-10 md:gap-y-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 px-4 py-8 md:p-0 gap-y-10 md:gap-y-0">
             {/* Column 1: Contact */}
             <div className="md:p-10 lg:p-12 md:border-r border-[#2B6DA9]">
-              <h3 className="text-sm md:text-xl text-[#A1BED9] font-semibold tracking-wide mb-6">
+              <h3 className="text-sm md:text-xl text-[#A1BED9] font-semibold tracking-wide mb-3 md:mb-6">
                 CONTACT
               </h3>
-              <div className="space-y-5">
+              <div className="space-y-3 md:space-y-5">
                 <div>
                   <p className="text-xs md:text-sm text-[#A1BED9] mb-1">Email:</p>
                   <a
@@ -44,10 +44,10 @@ export default function Footer() {
 
             {/* Column 2: Services */}
             <div className="md:p-10 lg:p-12 md:border-r border-[#2B6DA9]">
-              <h3 className="text-sm md:text-xl text-[#A1BED9] font-semibold tracking-wide mb-6">
+              <h3 className="text-sm md:text-xl text-[#A1BED9] font-semibold tracking-wide mb-3 md:mb-6">
                 SERVICES
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-1 md:space-y-4">
                 <li>
                   <a
                     href="#ship-management"
@@ -85,10 +85,10 @@ export default function Footer() {
 
             {/* Column 3: Company */}
             <div className="md:p-10 lg:p-12">
-              <h3 className="text-sm md:text-xl text-[#A1BED9] font-semibold tracking-wide mb-6">
+              <h3 className="text-sm md:text-xl text-[#A1BED9] font-semibold tracking-wide mb-3 md:mb-6">
                 COMPANY
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-1 md:space-y-4">
                 <li>
                   <a
                     href="#about-us"
