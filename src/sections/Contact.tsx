@@ -21,7 +21,7 @@ export default function Contact() {
             <h2 className="text-3xl md:text-5xl lg:text-[56px] font-medium text-white tracking-tight mb-4 md:mb-6 leading-[1.1]">
               How can we <br className="hidden lg:block" /> help you?
             </h2>
-            <p className="text-[14px] md:text-[15px] text-[#D1D5DB] leading-relaxed max-w-lg mx-auto lg:mx-0">
+            <p className="text-xs md:text-lg text-[#D1D5DB] leading-relaxed max-w-lg mx-auto lg:mx-0">
               We provide reliable maritime and shipping solutions designed to
               support your operations, move cargo efficiently, and deliver
               trusted services across every stage of the journey.
@@ -29,7 +29,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Glassmorphism Form Container */}
-          <div className="w-full lg:w-[480px] flex-shrink-0">
+          <div className="w-full lg:w-120 shrink-0">
             <div className="bg-[#0A111A]/80 backdrop-blur-md border border-white/5 rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl">
               <form
                 className="flex flex-col space-y-5"
@@ -39,7 +39,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="fullName"
-                    className="block text-[13px] font-medium text-white/90 mb-2"
+                    className="block text-xs md:text-base font-medium text-white/90 mb-2"
                   >
                     Full Name
                   </label>
@@ -55,7 +55,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="companyName"
-                    className="block text-[13px] font-medium text-white/90 mb-2"
+                    className="block text-xs md:text-base font-medium text-white/90 mb-2"
                   >
                     Company Name
                   </label>
@@ -71,7 +71,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-[13px] font-medium text-white/90 mb-2"
+                    className="block text-xs md:text-base font-medium text-white/90 mb-2"
                   >
                     Email Address
                   </label>
@@ -87,7 +87,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-[13px] font-medium text-white/90 mb-2"
+                    className="block text-xs md:text-base font-medium text-white/90 mb-2"
                   >
                     Phone Number
                   </label>
@@ -103,7 +103,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-[13px] font-medium text-white/90 mb-2"
+                    className="block text-xs md:text-base font-medium text-white/90 mb-2"
                   >
                     Message
                   </label>
