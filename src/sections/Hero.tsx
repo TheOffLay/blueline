@@ -15,8 +15,6 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      {/* Dark Overlay to make text readable */}
-      <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Main Hero Content */}
       <div className="relative z-10 flex flex-col items-center text-center w-full max-w-4xl mt-12 sm:mt-16">
@@ -32,7 +30,7 @@ export default function Hero() {
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-16 sm:mb-24 w-full sm:w-auto px-4 sm:px-0">
+        <div className="flex gap-4 mb-16 sm:mb-24 w-full sm:w-auto">
           <button className="bg-[#145DA0] text-white cursor-pointer px-6 py-3 rounded-md md:rounded-[10px] font-medium transition-colors shadow-lg w-full sm:w-auto text-[15px]">
             Contact Us
           </button>

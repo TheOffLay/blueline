@@ -79,11 +79,11 @@ export default function Services() {
       <div className="w-full bg-[#FFFFFF] pt-15 pb-3 md:pb-6 md:pt-30 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-semibold text-[#0F172A] tracking-tight mb-4">
-            Our Services
+            BlueLine Ship Solutions
           </h2>
 
           <p className="text-sm md:text-base text-[#475569] max-w-124 mx-auto leading-relaxed">
-            End-to-end solutions for vessel management, crew operations, and 
+            End-to-end solutions for vessel management, crew operations, and
             maritime logistics.
           </p>
         </div>
@@ -117,6 +117,7 @@ export default function Services() {
                 <div
                   key={index}
                   className={`
+                    flex flex-col items-center lg:items-start text-center lg:text-left /* <--- ADDED MOBILE CENTERING HERE ---> */
                     px-8 py-10 lg:px-10
                     relative
                     ${index !== 2 ? "lg:border-r lg:border-[#1E303F]" : ""}
@@ -131,6 +132,10 @@ export default function Services() {
                   <p className="text-xs md:text-sm text-[#B5BBC3] leading-relaxed max-w-83">
                     {service.description}
                   </p>
+
+                  {index !== 2 && (
+                    <div className="absolute bottom-0 left-8 right-8 h-px bg-[#1E303F] lg:hidden" />
+                  )}
                 </div>
               );
             })}
@@ -138,7 +143,7 @@ export default function Services() {
 
           {/* HORIZONTAL LINE WITH SPACING */}
           <div className="py-8">
-            <div className="w-full h-px bg-[#1E303F]" />
+            <div className="mx-8 lg:mx-0 h-px bg-[#1E303F]" />
           </div>
 
           {/* BOTTOM ROW */}
@@ -148,6 +153,7 @@ export default function Services() {
                 <div
                   key={index}
                   className={`
+                    flex flex-col items-center lg:items-start text-center lg:text-left /* <--- ADDED MOBILE CENTERING HERE ---> */
                     px-8 py-10 lg:px-10
                     relative
                     ${index !== 2 ? "lg:border-r lg:border-[#1E303F]" : ""}
@@ -162,6 +168,10 @@ export default function Services() {
                   <p className="text-[13px] text-slate-400 leading-relaxed max-w-[320px]">
                     {service.description}
                   </p>
+
+                  {index !== 2 && (
+                    <div className="absolute bottom-0 left-8 right-8 h-px bg-[#1E303F] lg:hidden" />
+                  )}
                 </div>
               );
             })}

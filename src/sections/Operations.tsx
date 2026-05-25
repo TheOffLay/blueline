@@ -44,9 +44,6 @@ export default function Operations() {
       }}
     >
 
-      {/* Deep dark teal/navy overlay to ensure text contrast over the image */}
-      {/* <div className="absolute inset-0 bg-[#04121A]/85"></div> */}
-
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-10 md:mb-16">

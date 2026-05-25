@@ -53,6 +53,23 @@ export default function Fleet() {
               stay informed while maintaining reliable and efficient maritime
               operations.
             </p>
+
+            <button className="flex items-center w-33.5 mt-5 gap-2 px-4 py-3 bg-transparent border border-[#145DA0] text-[#145DA0] rounded-[10px] text-[13px] font-medium transition-colors whitespace-nowrap">
+              Who We Are
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </button>
           </div>
 
           {/* Right: Image Collage */}
@@ -92,7 +109,7 @@ export default function Fleet() {
             with efficiency, safety, and compliance at every level.
           </p>
 
-          <button className="flex items-center gap-2 px-4 py-3 bg-transparent border border-[#145DA0] text-[#145DA0] rounded-[10px] text-[13px] font-medium transition-colors whitespace-nowrap">
+          <button className="hidden md:flex items-center gap-2 px-4 py-3 bg-transparent border border-[#145DA0] text-[#145DA0] rounded-[10px] text-[13px] font-medium transition-colors whitespace-nowrap">
             View More Fleet
             <svg
               className="w-4 h-4"
@@ -155,6 +172,23 @@ export default function Fleet() {
             </div>
           ))}
         </div>
+
+        <button className="mt-8 flex md:hidden items-center gap-2 px-4 py-3 bg-transparent border border-[#145DA0] text-[#145DA0] rounded-[10px] text-[13px] font-medium transition-colors whitespace-nowrap">
+          View More Fleet
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </button>
       </div>
     </section>
   );
