@@ -1,5 +1,5 @@
-import Voyage from "./sections/Voyage"
-import Contact from "./sections/Contact"
+import Voyage from "../sections/Voyage"
+import Contact from "../sections/Contact"
 
 export default function Company() {
   return (
