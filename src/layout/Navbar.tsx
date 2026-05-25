@@ -24,7 +24,11 @@ export default function Navbar() {
           <div className="shrink-0 flex items-center cursor-pointer">
             <div className="flex items-center gap-2">
               <div className="w-35 h-10 flex items-center justify-center">
-               <img src="/assets/logo.svg" alt="Ship Logo" className="h-8 w-auto" />
+                <img
+                  src="/assets/logo.svg"
+                  alt="Ship Logo"
+                  className="h-8 w-auto"
+                />
               </div>
             </div>
           </div>
@@ -35,7 +39,11 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <li key={link}>
                   <a
-                    href={`#${link.toLowerCase().replace(/ /g, "-")}`}
+                    href={
+                      link === "Company"
+                        ? "/company"
+                        : `#${link.toLowerCase().replace(/ /g, "-")}`
+                    }
                     className="text-base font-medium text-[#475569] hover:text-[#195E99] transition-colors whitespace-nowrap"
                   >
                     {link}
@@ -71,7 +79,10 @@ export default function Navbar() {
             </div>
 
             {/* Contact Us Button */}
-            <a href="#contact" className="bg-[#145DA0] text-white text-sm font-medium px-4 py-3 cursor-pointer rounded-[10px] transition-colors shadow-sm">
+            <a
+              href="#contact"
+              className="bg-[#145DA0] text-white text-sm font-medium px-4 py-3 cursor-pointer rounded-[10px] transition-colors shadow-sm"
+            >
               Contact Us
             </a>
           </div>
@@ -134,7 +145,11 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li key={link}>
                 <a
-                  href={`#${link.toLowerCase().replace(/ /g, "-")}`}
+                  href={
+                    link === "Company"
+                      ? "/company"
+                      : `#${link.toLowerCase().replace(/ /g, "-")}`
+                  }
                   className="block px-3 py-2 rounded-md text-sm font-medium text-[#475569] hover:text-[#195E99] transition-colors"
                 >
                   {link}
@@ -168,7 +183,10 @@ export default function Navbar() {
             </div>
 
             <div className="px-3">
-              <a href="#contact" className="w-full bg-[#1A619F] hover:bg-[#144D7E] text-white text-[15px] font-medium px-6 py-2.5 rounded-md transition-colors shadow-sm">
+              <a
+                href="#contact"
+                className="w-full text-center block bg-[#1A619F] hover:bg-[#144D7E] text-white text-[15px] font-medium px-6 py-2.5 rounded-md transition-colors shadow-sm"
+              >
                 Contact Us
               </a>
             </div>
