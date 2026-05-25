@@ -1,35 +1,12 @@
 import Contact from "../sections/Contact";
-import Voyage from "../sections/Voyage";
+import Voyagee from "../sections/Voyagee";
 
 export default function Company() {
   const operations = [
     {
       id: 1,
       icon: (
-        <svg
-          className="w-8 h-8 md:w-9 md:h-9"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-        >
-          {/* Ship / Wave Icon */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M2.25 18c1.5 0 2.25-.75 3.75-.75s2.25.75 3.75.75 2.25-.75 3.75-.75 2.25.75 3.75.75 2.25-.75 3.75-.75 2.25.75 3.75.75"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4.5 15l1.5-5.25h12L19.5 15H4.5z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 9.75V4.5l3 2.25-3 2.25"
-          />
-        </svg>
+        <img src="/assets/icons/boat-b.svg" alt="Ship Icon" className="w-8.5 h-8.5 mb-5" />
       ),
       text: (
         <>
@@ -42,25 +19,7 @@ export default function Company() {
     {
       id: 2,
       icon: (
-        <svg
-          className="w-8 h-8 md:w-9 md:h-9"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-        >
-          {/* Engine / Operations Icon */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M5 10h14v5H5z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M7 10V7h2v3m6-3h2v3M3 12h2m14 0h2m-11 3v2h6v-2"
-          />
-        </svg>
+     <img src="/assets/icons/engine-b.svg" alt="Engine Icon" className="w-8.5 h-8.5 mb-5" />
       ),
       text: (
         <>
@@ -73,66 +32,20 @@ export default function Company() {
     {
       id: 3,
       icon: (
-        <svg
-          className="w-8 h-8 md:w-9 md:h-9"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-        >
-          {/* Shield & Star Icon */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 8l1.2 2.5 2.8.4-2 2 .5 2.8-2.5-1.3-2.5 1.3.5-2.8-2-2 2.8-.4L12 8z"
-          />
-        </svg>
+        <img src="/assets/icons/honour-star-b.svg" alt="Reliability Icon" className="w-8.5 h-8.5 mb-5" />
       ),
       text: (
         <>
-          Voyage planning and
+          Voyage planning and 
           <br />
-          optimization
+          execution
         </>
       ),
     },
     {
       id: 4,
       icon: (
-        <svg
-          className="w-8 h-8 md:w-9 md:h-9"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-        >
-          {/* Hand & Shield/Check Icon */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 11.25V5.25a1.875 1.875 0 113.75 0v4.5"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12.75 8.25v-1.5a1.875 1.875 0 013.75 0v4.5"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 15.5c0 2.5-2 4-2 4s-2-1.5-2-4v-2l2-.75 2 .75v2z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12.5 15.5l.5.5 1-1"
-          />
-        </svg>
+         <img src="/assets/icons/safe.svg" alt="Monitoring Icon" className="w-8.5 h-8.5 mb-5" />
       ),
       text: (
         <>
@@ -145,37 +58,11 @@ export default function Company() {
     {
       id: 5,
       icon: (
-        <svg
-          className="w-8 h-8 md:w-9 md:h-9"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-        >
-          {/* Route / Monitoring Icon */}
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 11.25v4.5"
-          />
-          <rect
-            x="5"
-            y="15.75"
-            width="14"
-            height="4.5"
-            rx="1.5"
-            strokeDasharray="3 3"
-          />
-        </svg>
+       <img src="/assets/icons/road-location-02-b.svg" alt="Route Icon" className="w-8.5 h-8.5 mb-5" />
       ),
       text: (
         <>
-          Real-time operational
+          Real -time operational
           <br />
           monitoring
         </>
@@ -296,8 +183,7 @@ export default function Company() {
         </div>
       </section>
 
-      <Voyage />
-
+      <Voyagee />
       <Contact />
     </>
   );

@@ -25,6 +25,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="shrink-0 flex items-center cursor-pointer">
             <div className="flex items-center gap-2">
+               <a href="/">
               <div className="w-35 h-10 flex items-center justify-center">
                 <img
                   src="/assets/logo.svg"
@@ -32,6 +33,7 @@ export default function Navbar() {
                   className="h-8 w-auto"
                 />
               </div>
+              </a>
             </div>
           </div>
 
