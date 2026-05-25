@@ -161,25 +161,25 @@ export default function Company() {
                 <div className="text-[#5C738A] mb-5">{op.icon}</div>
 
                 {/* Text - <br /> tags handle the exact wrapping from your mockup */}
-                <p className="text-[13px] text-[#475569] leading-relaxed max-w-[200px]">
+                <p className="text-[13px] text-[#475569] leading-relaxed max-w-50">
                   {op.text}
                 </p>
 
                 {/* DESKTOP ONLY: Vertical Divider Line */}
                 {index !== 4 && (
-                  <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-[60px] bg-[#E2E8F0]" />
+                  <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-32 bg-[#E2E8F0]" />
                 )}
 
                 {/* MOBILE ONLY: Short Horizontal Divider Line */}
                 {index !== 4 && (
-                  <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 h-px w-[140px] bg-[#E2E8F0]" />
+                  <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 h-px w-35 bg-[#E2E8F0]" />
                 )}
               </div>
             ))}
           </div>
 
           {/* Full-width Bottom Divider Line (Visible on both Mobile & Desktop) */}
-          <div className="w-full max-w-250 h-px bg-[#E2E8F0]" />
+          <div className="w-full max-w-600 h-px bg-[#E2E8F0]" />
         </div>
       </section>
 
